@@ -1,0 +1,46 @@
+.Auth {
+  white-space: nowrap;
+  align-items: center;
+}
+.Auth .blueBtn {
+  background-color: #27490bab;
+  border: 0;
+  padding: 15px 28px;
+  color: white;
+  border-radius: 8px;
+  font-family: inherit;
+  transition: all 100ms linear(-0.09 -50%, 0.72 86.47%);
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+.Auth .blueBtn:hover {
+  background-color: #000000;
+}
+.Auth .icon {
+  background-color: transparent;
+  border: none;
+  font-size: 0px;
+  transform: translateY(3px);
+  display: none;
+}
+
+@media (max-width:720px) {
+  .Auth .icon {
+    display: inline;
+  }
+  .Auth span {
+    display: none;
+  }
+  .Auth .blueBtn {
+    padding: 3px 6px;
+  }
+}
+@media (max-width:700px) {
+  .Auth .icon {
+    display: none;
+  }
+  .Auth span {
+    display: inline;
+  }
+}

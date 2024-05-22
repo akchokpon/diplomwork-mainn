@@ -1,0 +1,51 @@
+.link {
+  text-decoration: none;
+}
+
+.cartlink-button {
+  width: 100px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 100ms linear;
+}
+.cartlink-button:hover {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+.cartlink-button div {
+  text-decoration: none;
+  color: black;
+  font-family: 'Baloo 2', cursive;
+  font-size: 7px;
+}
+.cartlink-button:hover div {
+  color: white;
+}
+.cart {
+  width: 35px;
+  transform: translateY(-7px);
+}
+
+@media (max-width:700px) {
+  .cartlink-button{
+    width: 125px;
+  }
+}
+@media (max-width:550px) {
+  .cartlink-button span{
+    display: none;
+  }
+  .cartlink-button {
+    width: 100px;
+  }
+  .cartlink-button div {
+    font-size: 30px;
+  }
+}

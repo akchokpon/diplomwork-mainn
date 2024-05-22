@@ -1,0 +1,23 @@
+.Layout {
+  display: grid;
+  grid-template-areas: "header header"
+  "aside main"
+  "footer footer";
+  grid-template-columns: 1fr 6fr;
+  
+  max-width: 93%;
+  margin: 0 auto;
+}
+.Layout header {
+  grid-area: header;
+}
+.Layout aside {
+  grid-area: aside;
+  height: 370px;
+}
+.Layout main {
+  grid-area: main;
+}
+.Layout footer {
+  grid-area: footer;
+}

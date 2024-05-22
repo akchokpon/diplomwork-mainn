@@ -1,0 +1,70 @@
+.dropdownBtn {
+  background-color:  #27490bab;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  
+  font-style: normal;
+  width: 100%;
+}
+.dropdownBtn:hover {
+  background-color: #27490bab;
+}
+.CategoryList {
+  position: relative;
+  display: inline-block;
+}
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  margin: 0;
+  border-radius: 5px;
+  padding: 0;
+}
+.dropdownContent li a {
+  list-style-type: none;
+  color: black;
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+}
+.dropdownContent li {
+  background-color: #f7f7f7;
+  list-style-type: none;
+}
+.CategoryList:hover .dropdownContent {
+  display: block;
+}
+
+.dropdownContent li:hover {
+  background-color: #f2f9ff;
+}
+.dropdownContent li a:hover {
+  transform: translateX(5px);
+  transition: 200ms ease all;
+  color: palevioletred;
+}
+
+@media (max-width: 860px) {
+  .CategoryList button {
+    padding: 5px;
+  }
+}
+@media (max-width: 780px) {
+  .CategoryList button span {
+    display: none;
+  }
+  .CategoryList button {
+    padding: 5px 30px;
+  }
+}
