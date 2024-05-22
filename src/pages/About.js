@@ -30,7 +30,7 @@ export default function About() {
         <div className="member">
           <img src={photo2} alt="Team Member 2" />
           <h3>Kim Hyungni</h3>
-          <p>Menedjer</p>
+          <p>LILI</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, reprehenderit atque? Exercitationem illum, neque dolores hic quidem perspiciatis a doloremque unde obcaecati corrupti commodi nulla quos cupiditate. Fugit, ullam sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae ipsum officiis atque dicta eum a, dolorum, laudantium nemo eaque quam exercitationem unde, facere earum recusandae sapiente molestias iste molestiae veniam.
           </p>
           <p>

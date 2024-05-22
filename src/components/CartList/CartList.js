@@ -52,7 +52,6 @@ export default function CartList() {
             min={1}
             onChange={(event) => onQuantityChange(product, +event.target.value)} />
           <button className="quantityButton" onClick={() => incrementQuantity(product)}>+</button>
-          <span>${(cart[product.id] * product.price).toFixed(2)}</span>
           <i className="fa fa-times" onClick={() => onItemRemove(product)} />
         </div>
       </div>
