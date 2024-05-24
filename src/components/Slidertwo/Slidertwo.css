@@ -93,24 +93,24 @@
 
 /* Фоновые изображения */
 .slide-bg-1 {
-  background-image: url('../../img/WhatsApp\ Image\ 2024-05-21\ at\ 20.38.03\ \(1\).jpeg');
+  background-image: url('../../img/slider1.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .slide-bg-2 {
-  background-image: url('../../img/WhatsApp\ Image\ 2024-05-21\ at\ 20.38.02.jpeg');
+  background-image: url('../../img/slider2.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .slide-bg-3 {
-  background-image: url('../../img/WhatsApp\ Image\ 2024-05-21\ at\ 20.38.03.jpeg');
+  background-image: url('../../img/slider3.jpg');
   background-size: cover;
   background-position: center;
 }
 .slide-bg-4 {
-  background-image: url('../../img/WhatsApp\ Image\ 2024-05-21\ at\ 20.38.06.jpeg');
+  background-image: url('../../img/Karina\ 21_.jpg');
   background-size: cover;
   background-position: center;
 }
