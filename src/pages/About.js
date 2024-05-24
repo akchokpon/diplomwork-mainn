@@ -21,7 +21,7 @@ export default function About() {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, reprehenderit atque? Exercitationem illum, neque dolores hic quidem perspiciatis a doloremque unde obcaecati corrupti commodi nulla quos cupiditate. Fugit, ullam sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae ipsum officiis atque dicta eum a, dolorum, laudantium nemo eaque quam exercitationem unde, facere earum recusandae sapiente molestias iste molestiae veniam.
           </p>
           <p>
-            Phone: <a  className="nomer" href="tel:+996702899920">+996702899920</a>
+            Phone: <a  className="nomer" href="tel:+996702514897">+996702514897</a>
           </p>
           <a className="link-instagram" href="https://www.instagram.com/">
             Instagram<i className="fab fa-instagram"></i>
@@ -30,7 +30,7 @@ export default function About() {
         <div className="member">
           <img src={photo2} alt="Team Member 2" />
           <h3>Kim Hyungni</h3>
-          <p>LILI</p>
+          <p>Menedjer</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, reprehenderit atque? Exercitationem illum, neque dolores hic quidem perspiciatis a doloremque unde obcaecati corrupti commodi nulla quos cupiditate. Fugit, ullam sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae ipsum officiis atque dicta eum a, dolorum, laudantium nemo eaque quam exercitationem unde, facere earum recusandae sapiente molestias iste molestiae veniam.
           </p>
           <p>
