@@ -32,7 +32,7 @@ const SliderComponent = () => {
           {/* Первый слайд */}
           <div className="intro11-section swiper-slide slide-1 slide-bg-1 bg-position">
             <div className="intro11-content text-left">
-              <h3 className="title-slider text-uppercase">OUR TEAM</h3>
+              <h3 className="title-slider text-uppercase">Top Trend</h3>
               <h2 className="title">2022 Flower Trend</h2>
               <p className="desc-content">
                 Lorem ipsum dolor sit amet, pri autem nemore bonorum te. Autem fierent ullamcorper ius no, nec ea quodsi invenire.
@@ -72,7 +72,6 @@ const SliderComponent = () => {
               <p className="desc-content">
                 Lorem ipsum dolor sit amet, pri autem nemore bonorum te. Autem fierent ullamcorper ius no, nec ea quodsi invenire.
               </p>
-              <a href="product-details.html" className="btn flosun-button secondary-btn rounded-0">Shop Now</a>
             </div>
           </div>
         </div>
