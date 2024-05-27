@@ -1,24 +1,31 @@
-import { useEffect, useContext, useState, useRef } from "react";
+import React, { useEffect, useContext, useState, useRef } from "react";
+import PropTypes from "prop-types";
 import { AppContext } from "../../App";
 import ProductItem from "../ProductItem/ProductItem";
 import "./Search.css";
 
-export default function Search() {
+const Search = () => {
   const { products } = useContext(AppContext);
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const searchRef = useRef(null);
 
   const handleSearch = (event) => {
-    const value = event.target.value;
+    const { value } = event.target;
     setSearchTerm(value);
 
-    if (value.trim() === "") {
+    if (!value.trim()) {
       setSearchResults([]);
     } else {
-      const filteredProducts = products.filter((product) =>
-        product.name.toLowerCase().includes(value.toLowerCase())
-      );
+        const filteredProducts = products.filter((product) => {
+            // Преобразуем имя продукта и значение поиска в нижний регистр для нерегистрозависимого сравнения
+            const productNameLowerCase = product.name.toLowerCase();
+            const searchValueLowerCase = value.toLowerCase();
+          
+            // Проверяем, включает ли имя продукта в себя значение поиска
+            return productNameLowerCase.includes(searchValueLowerCase);
+          });
+          
       setSearchResults(filteredProducts.slice(0, 5));
     }
   };
@@ -46,7 +53,7 @@ export default function Search() {
     <div className="Search" ref={searchRef}>
       <input
         type="text"
-        placeholder=" search "
+        placeholder="Search"
         value={searchTerm}
         onChange={handleSearch}
       />
@@ -67,4 +74,10 @@ export default function Search() {
       </div>
     </div>
   );
-}
+};
+
+Search.propTypes = {
+  products: PropTypes.array.isRequired, // Assuming products is an array
+};
+
+export default Search;
