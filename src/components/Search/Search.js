@@ -1,34 +1,31 @@
-import React, { useEffect, useContext, useState, useRef } from "react";
-import PropTypes from "prop-types";
+import { useEffect, useContext, useState, useRef } from "react";
 import { AppContext } from "../../App";
 import ProductItem from "../ProductItem/ProductItem";
 import "./Search.css";
 
-const Search = () => {
+export default function Search() {
   const { products } = useContext(AppContext);
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const searchRef = useRef(null);
 
   const handleSearch = (event) => {
-    const { value } = event.target;
+    const value = event.target.value;
     setSearchTerm(value);
-
-    if (!value.trim()) {
+  
+    if (value.trim() === "") {
       setSearchResults([]);
     } else {
-        const filteredProducts = products.filter((product) => {
-            // Преобразуем имя продукта и значение поиска в нижний регистр для нерегистрозависимого сравнения
-            const productNameLowerCase = product.name.toLowerCase();
-            const searchValueLowerCase = value.toLowerCase();
-          
-            // Проверяем, включает ли имя продукта в себя значение поиска
-            return productNameLowerCase.includes(searchValueLowerCase);
-          });
-          
+      const filteredProducts = products.filter((product) => {
+        if (product && product.name && typeof product.name === "string") {
+          return product.name.toLowerCase().includes(value.toLowerCase());
+        }
+        return false;
+      });
       setSearchResults(filteredProducts.slice(0, 5));
     }
   };
+  
 
   const handleClickOutside = (event) => {
     if (searchRef.current && !searchRef.current.contains(event.target)) {
@@ -53,7 +50,7 @@ const Search = () => {
     <div className="Search" ref={searchRef}>
       <input
         type="text"
-        placeholder="Search"
+        placeholder=" search "
         value={searchTerm}
         onChange={handleSearch}
       />
@@ -74,10 +71,4 @@ const Search = () => {
       </div>
     </div>
   );
-};
-
-Search.propTypes = {
-  products: PropTypes.array.isRequired, // Assuming products is an array
-};
-
-export default Search;
+}
