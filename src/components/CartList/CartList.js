@@ -1,7 +1,7 @@
+import React, { useContext } from 'react';
 import "./CartList.css";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
 
 export default function CartList() {
   const { products, cart, setCart } = useContext(AppContext);
@@ -35,6 +35,15 @@ export default function CartList() {
 
   const productIds = Object.keys(cart);
 
+  // Вычисляем общую стоимость всех товаров в корзине
+  const total = productIds.reduce((acc, productId) => {
+    const product = products.find(p => p.id === productId);
+    if (product) {
+      return acc + (product.price * cart[productId]);
+    }
+    return acc;
+  }, 0);
+
   const output = products
     .filter((product) => productIds.includes(product.id))
     .map((product) => (
@@ -43,7 +52,7 @@ export default function CartList() {
           <img src={product.picture} alt={product.name} />
         </Link>
         <Link to={"/products/" + product.slug}>{product.name}</Link>
-
+        <span>${product.price}</span>
         <div className="inputs">
           <button className="quantityButton" onClick={() => decrementQuantity(product)}>-</button>
           <input
@@ -52,7 +61,7 @@ export default function CartList() {
             min={1}
             onChange={(event) => onQuantityChange(product, +event.target.value)} />
           <button className="quantityButton" onClick={() => incrementQuantity(product)}>+</button>
-          <i className="fa fa-times" onClick={() => onItemRemove(product)} />
+          <button className="removeButton" onClick={() => onItemRemove(product)}>+</button>
         </div>
       </div>
     ));
@@ -60,6 +69,7 @@ export default function CartList() {
   return (
     <div className="CartList">
       {output.length > 0 ? output : <p className="emptyCartMessage">Your cart is empty.</p>}
+      <p>Total: ${total.toFixed(2)}</p> {/* Отображаем общую стоимость */}
     </div>
   );
 }

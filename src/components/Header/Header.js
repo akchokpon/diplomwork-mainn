@@ -3,9 +3,9 @@ import Logo from "../Logo/Logo";
 import CartLink from "../CartLink/CartLink";
 import Auth from "../Auth/Auth";
 import Menu from "../Menu/Menu";
+import Search from "../Search/Search";
 
 export default function HeaderSection() {
-
   return (
     <header className="Header">
       <div className="container">
@@ -18,7 +18,7 @@ export default function HeaderSection() {
           </div>
         </div>
       </div>
+      <Search />
     </header>
-  )
-  
+  );
 }

@@ -17,7 +17,7 @@
 }
 .ProductList .product img {
   width: 250px;
-  height: 250px;
+  height: 310px;
   background-color: white;
   transition: all 100ms linear;
 }

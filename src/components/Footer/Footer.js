@@ -1,31 +1,40 @@
-import { Link, NavLink } from "react-router-dom";
+import Logo from "../Logo/Logo";
+import Menu from "../Menu/Menu";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
-export default function Footer() {
+function Footer() {
   return (
-    <div className="Footer">
-      <div className="footer-links">
-        <ul>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contacts">Contacts</NavLink>
-          </li>
-          <li>
-            <NavLink to="/delivery">Delivery</NavLink>
-          </li>
-        </ul>
-        <Link to="https://instagram.com/xxanax_2.0?igshid=OTk0YzhjMDVlZA==" target="blank">
-          <i className="fa-brands fa-instagram" />
-        </Link>
+    <footer>
+      <div className="container">
+        <div className="Foot flex">
+          <Logo />
+          <div className="Foot_menu">
+            <p className="Foot_tit">Menu</p>
+            <div className="Foot_menu-in flex">
+              <Menu />
+              <p>
+                If you reside in the U.S. territories, please call Goldman Sachs
+                at 877-255-5923 with questions about Apple Card. Learn more
+                about how Apple Card applications are evaluated at
+                support.apple.com/kb/HT209218.
+                lo
+              </p>
+            </div>
+          </div>
+          <div className="Foot_links-wrap">
+            <p className="Foot_tit">Links</p>
+          </div>
+        </div>
+        <div className="Foot_bot">
+          <p>
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio fugiat temporibus iusto, et iure vel est, repellat omnis perspiciatis expedita provident suscipit molestias facilis, quas quibusdam numquam voluptatibus reiciendis asperiores!
+          </p>
+          <p>Copyright © 2024 La Rosa Inc. All rights reserved.</p>
+        </div>
       </div>
-      <div className="info">
-        Flora Journery --- Online Shop Flowers
-      </div>
-    </div>
-  )
+    </footer>
+  );
 }
+
+export default Footer;

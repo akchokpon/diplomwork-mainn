@@ -1,5 +1,4 @@
 import { useContext, useState } from "react";
-import "./AddProduct.css";
 import { AppContext } from "../../App";
 import { productsCollection, uploadProductPhoto } from "../../firebase";
 import { addDoc } from "firebase/firestore";
@@ -9,7 +8,6 @@ export default function AddProduct({ category }) {
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
   const [picture, setPicture] = useState(null);
-  const [description, setDescription] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   if (!user || !user.isAdmin) {
@@ -26,15 +24,12 @@ export default function AddProduct({ category }) {
     const file = event.target.files[0];
     setPicture(file);
   }
-  function onChangeDescription(event) {
-    setDescription(event.target.value);
-  }
 
   function onFormSubmit(event) {
     event.preventDefault();
 
     if (!picture) {
-      alert("Please upload an picture");
+      alert("Please upload an image");
       return;
     }
 
@@ -44,17 +39,15 @@ export default function AddProduct({ category }) {
         addDoc(productsCollection, {
           category: category.id,
           name: name,
-          price: Number(price),
+          price: price,
           picture: pictureUrl,
-          description: description,
           slug: name.replaceAll(" ", "-").toLowerCase(),
         })
       )
       .then(() => {
         setName("");
-        setPrice(0.0);
+        setPrice("");
         setPicture(null);
-        setDescription("");
       })
       .catch((error) => {
         console.log("Failed to add product:", error);
@@ -84,7 +77,6 @@ export default function AddProduct({ category }) {
             type="number"
             value={price}
             name="price"
-            step="any"
             onChange={onChangePrice}
             min={0}
             required
@@ -99,18 +91,11 @@ export default function AddProduct({ category }) {
             required
           />
         </label>
-        <label>
-          Description:
-          <textarea
-            type=""
-            name="description"
-            value={description}
-            onChange={onChangeDescription}
-            required
-          />
-        </label>
-        <button type="submit" disabled={isSubmitting}>{isSubmitting ? "Submitting..." : "Submit"}</button>
+        <button type="submit" disabled={isSubmitting}>
+          {isSubmitting ? "Submitting..." : "Submit"}
+        </button>
       </form>
     </div>
   );
 }
+

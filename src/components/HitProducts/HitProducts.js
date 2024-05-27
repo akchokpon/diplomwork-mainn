@@ -7,7 +7,11 @@ import { AddToCart } from "../AddToCart/AddToCart";
 export default function HitProducts({ category }) {
   const { products } = useContext(AppContext);
 
+  // Определяем количество товаров, которые вы хотите вывести
+  const numberOfProductsToShow = 4;
+
   const output = products
+    .slice(0, numberOfProductsToShow) // Используем метод slice для выборки нужного количества товаров
     .map(product => (
       <div key={product.id} className="product">
         <div className="hit">Bestseller</div>
@@ -32,10 +36,7 @@ export default function HitProducts({ category }) {
         <i class="fa-solid fa-star" /> <span>Bestsellers</span> <hr color="#b1cc19" />
       </div>
       <div className="hits">
-        {output[0]}
-        {output[23]}
-        {output[56]}
-        {output[35]}
+        {output}
       </div>
     </div>
   )

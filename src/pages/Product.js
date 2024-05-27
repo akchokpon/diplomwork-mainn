@@ -1,14 +1,31 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useMatch } from "react-router-dom"
 import { AppContext } from "../App";
 import NotFound from "./NotFound";
 import { AddToCart } from "../components/AddToCart/AddToCart";
+import "./Product.css";
 
 export default function Product() {
   const { params } = useMatch("/products/:slug");
-  const { products } = useContext(AppContext);
+  const { products, cart, setCart } = useContext(AppContext);
 
   const product = products.find(product => product.slug === params.slug);
+  const [quantity, setQuantity] = useState(1);
+
+  const handleQuantityChange = (newQuantity) => {
+    setQuantity(newQuantity);
+  };
+
+  const handleAddToCart = () => {
+    // Добавление товара в корзину с учетом выбранного количества
+    const updatedCart = { ...cart };
+    if (updatedCart[product.id]) {
+      updatedCart[product.id].quantity += quantity;
+    } else {
+      updatedCart[product.id] = { ...product, quantity };
+    }
+    setCart(updatedCart);
+  };
 
   if (!product) {
     return <NotFound />
@@ -23,7 +40,12 @@ export default function Product() {
         <h1>{product.name}</h1>
         <p><strong>Price:</strong> {product.price}$</p>
         <p><strong>Description: </strong>{product.description}</p>
-        <AddToCart product={product} />
+        <div>
+          <button onClick={() => handleQuantityChange(quantity - 1)}>-</button>
+          <span>{quantity}</span>
+          <button onClick={() => handleQuantityChange(quantity + 1)}>+</button>
+        </div>
+        <AddToCart product={product} onClick={handleAddToCart} />
       </div>
     </div>
   )

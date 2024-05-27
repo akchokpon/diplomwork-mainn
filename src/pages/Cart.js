@@ -6,30 +6,35 @@ import { AppContext } from "../App";
 export function Cart() {
   const [modalActive, setModalActive] = useState(false);
   const { cart, user } = useContext(AppContext);
+
+  // Calculate total price
+  const totalPrice = Object.values(cart).reduce((acc, item) => acc + item.price, 0);
   
   if (Object.keys(cart).length === 0) {
     return (
-    <div className="Cart" >
-      <h1>Cart</h1>
-      <CartList />
-      <OrderForm active={modalActive} setActive={setModalActive} />
-    </div>
-    )
+      <div className="Cart">
+        <h1>Cart</h1>
+        <CartList />
+        <OrderForm active={modalActive} setActive={setModalActive} />
+      </div>
+    );
   }
   if (!user) {
-    <div className="Cart" >
-      <h1>Cart</h1>
-      <CartList />
-      <OrderForm active={modalActive} setActive={setModalActive} />
-    </div>
+    return (
+      <div className="Cart">
+        <h1>Cart</h1>
+        <CartList />
+        <OrderForm active={modalActive} setActive={setModalActive} />
+      </div>
+    );
   }
 
   return (
-    <div className="Cart" >
+    <div className="Cart">
       <h1>Cart</h1>
       <CartList />
       <button type="submit" className="order" onClick={() => setModalActive(true)}>Order</button>
       <OrderForm active={modalActive} setActive={setModalActive} />
     </div>
-  )
+  );
 }
