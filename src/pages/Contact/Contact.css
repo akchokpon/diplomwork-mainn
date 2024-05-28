@@ -19,6 +19,7 @@
 
 .contact-label {
   font-weight: bold;
+  color: #27490bab;
 }
 
 .contact-message {
@@ -29,7 +30,16 @@
 }
 
 .contact-action {
-  margin-top: 20px;
+  margin-top: 15px;
+}
+.hours{
+  padding-top: 15px;
+}
+.phone{
+  padding-top: 15px;
+}
+.email{
+  padding-top: 15px;
 }
 
 .contact-button {
@@ -79,7 +89,6 @@
 .network-icon {
   width: 40px;
   height: 40px;
-  background-color: white;
   transition: background-color 0.3s;
   cursor: pointer;
   transition: .5s;
@@ -88,4 +97,239 @@
 .network-icon:hover {
   color: #333;
   transform: scale(1.1);
+}
+@media screen and (max-width: 920px) {
+  .contacts-container {
+    padding: 30px;
+  }
+
+  .contacts-heading {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  .contact-details {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .contact-message {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .contact-button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .network-icons {
+    margin-bottom: 25px;
+  }
+
+  .network-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .contacts-container {
+    padding: 25px;
+  }
+
+  .contacts-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .contact-details {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .contact-message {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .contact-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .network-icons {
+    margin-bottom: 20px;
+  }
+
+  .network-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .contacts-container {
+    padding: 20px;
+  }
+
+  .contacts-heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .contact-details {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .contact-message {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .contact-button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .network-icons {
+    margin-bottom: 15px;
+  }
+
+  .network-icon {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contacts-container {
+    padding: 15px;
+  }
+
+  .contacts-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .contact-details {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+
+  .contact-message {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .contact-button {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .network-icons {
+    margin-bottom: 10px;
+  }
+
+  .network-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contacts-heading {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .contact-details {
+    font-size: 9px;
+    margin-bottom: 6px;
+  }
+
+  .contact-message {
+    font-size: 9px;
+    margin-bottom: 8px;
+  }
+
+  .contact-button {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .network-icon {
+    width: 15px;
+    height: 15px;
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contacts-heading {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .contact-details {
+    font-size: 8px;
+    margin-bottom: 4px;
+  }
+
+  .contact-message {
+    font-size: 8px;
+    margin-bottom: 6px;
+  }
+
+  .contact-button {
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+
+  .network-icon {
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 99px) {
+  .contacts-container {
+    padding: 10px;
+  }
+
+  .contacts-heading {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .contact-details {
+    font-size: 6px;
+    margin-bottom: 3px;
+  }
+
+  .contact-message {
+    font-size: 6px;
+    margin-bottom: 4px;
+  }
+
+  .contact-button {
+    font-size: 6px;
+    padding: 2px 3px;
+  }
+
+  .network-icons {
+    margin-bottom: 5px;
+  }
+
+  .network-icon {
+    width: 10px;
+    height: 10px;
+    font-size: 6px;
+  }
 }
