@@ -1,0 +1,85 @@
+.Delivery {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-image: url(https://phonoteka.org/uploads/posts/2022-02/1644290011_1-phonoteka-org-p-fon-gadzheti-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .Delivery-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .Delivery-header h1 {
+    font-size: 40px;
+    color: #27490bab;
+    padding-right: 200px;
+  }
+  
+  .Delivery-header p {
+    font-size: 25px;
+    color: #27490bab;
+    padding-right: 200px;
+  }
+  
+  .Delivery-photos {
+    width: 900px;
+  padding-left: 150px;
+  }
+  
+  .Delivery-photos img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .Delivery-info {
+    text-align: center;
+  }
+  
+  .Delivery-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #27490bab;
+  }
+  
+  .Delivery-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #27490bab;
+  }
+  
+  .Delivery-info img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+  }
+  .payment{
+    display: flex;
+justify-content: space-around;
+  }
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .Delivery-header h1 {
+      font-size: 28px;
+    }
+  
+    .Delivery-header p {
+      font-size: 16px;
+    }
+  
+    .Delivery-info h2 {
+      font-size: 20px;
+    }
+  
+    .Delivery-info p {
+      font-size: 14px;
+    }
+  }
+  
