@@ -1,70 +1,76 @@
-.dropdownBtn {
-  background-color:  #27490bab;
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  
-  font-style: normal;
-  width: 100%;
+.CategoryList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  justify-content: space-around;
 }
-.dropdownBtn:hover {
-  background-color: #27490bab;
+
+.CategoryList .card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: calc(33.33% - 20px); /* Подстраивайте под нужную ширину карточек */
+  margin-bottom: 20px;  
+  margin-right: 15px;
+
+}
+
+.CategoryList .card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.CategoryList .card-content {
+  padding: 9px;
+}
+
+.CategoryList .card-title {
+  margin: 0;
+  font-size: 18px;
+  width: 120px;
+  color: #27490bab;
+}
+
+.dropdownContent{
+  display: flex;
+}
+.CategoryList li {
+  list-style-type: none;
 }
 .CategoryList {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
 }
-.dropdownContent {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 3;
+
+.CategoryList .card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: calc(33.33% - 20px); /* Подстраивайте под нужную ширину карточек */
+  margin-bottom: 20px;
+}
+
+.CategoryList .card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.CategoryList .card-content {
+  padding: 16px;
+}
+
+.CategoryList .card-title {
   margin: 0;
-  border-radius: 5px;
-  padding: 0;
-}
-.dropdownContent li a {
-  list-style-type: none;
-  color: black;
-  padding: 6px 8px;
-  text-decoration: none;
-  display: block;
-}
-.dropdownContent li {
-  background-color: #b0bba8ab;
-  list-style-type: none;
-}
-.CategoryList:hover .dropdownContent {
-  display: block;
+  font-size: 18px;
+  text-align: center;
 }
 
-.dropdownContent li:hover {
-  background-color: #f2f9ff;
-}
-.dropdownContent li a:hover {
-  transform: translateX(5px);
-  transition: 200ms ease all;
-  color: rgb(21, 9, 13);
-}
-
-@media (max-width: 860px) {
-  .CategoryList button {
-    padding: 5px;
-  }
-}
-@media (max-width: 780px) {
-  .CategoryList button span {
-    display: none;
-  }
-  .CategoryList button {
-    padding: 5px 30px;
-  }
+/* Стили для изображений категорий */
+.CategoryList .category-image {
+  width: 100%; /* Ширина изображения равна ширине родительского элемента */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  border-radius: 8px; /* Закругление углов */
 }

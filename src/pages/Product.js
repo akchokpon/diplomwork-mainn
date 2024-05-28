@@ -36,10 +36,21 @@ export default function Product() {
       <div>
         <img src={product.picture} alt={product.name} />
       </div>
-      <div>
-        <h1>{product.name}</h1>
-        <p><strong>Price:</strong> {product.price}$</p>
-        <p><strong>Description: </strong>{product.description}</p>
+      <div className="name_pr">
+        <div className="pr_name">
+          {product.name}
+        </div>
+        <div className="pr">
+          <p><strong>Price:</strong>
+            </p>
+            <div className="price">{product.price}$</div>
+            </div>
+            <div className="pr">
+          <p><strong>Description:</strong>
+            </p>
+            <div className="description">{product.description}$</div>
+            </div>
+        
         <div>
           <button onClick={() => handleQuantityChange(quantity - 1)}>-</button>
           <span>{quantity}</span>

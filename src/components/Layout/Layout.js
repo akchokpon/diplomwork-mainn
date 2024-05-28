@@ -13,8 +13,9 @@ export default function Layout(props) {
         <Header/>
       </header>
       <aside>
+         
         <CategoryList />
-        <DiscountProd/>
+       
       </aside>
       <main>{props.children}</main>
 

@@ -23,4 +23,34 @@
     font-size: 20px;
     margin: 0 10px;
   }
-  
+  .Category{
+    width: 1315px;
+  padding-left: 70px; }
+
+  p strong{
+    color: #27490bab;
+    font-size: 30px;
+  }
+  .pr_name{
+    font-size: 40px;
+    color: #27490bab;
+    font-weight: 700;
+  }
+  .price {
+    padding: 0 0 10px 10px;
+    /* padding-top: 2px; */
+    font-size: 28px;
+    color: #625050;
+}
+.pr{
+  display: flex;
+}
+.description{
+  padding: 8px 0 10px 10px;
+    /* padding-top: 2px; */
+    font-size: 18px;
+    color: #625050;
+}
+.name_pr{
+  padding-top: 50px;
+}

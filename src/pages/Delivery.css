@@ -17,18 +17,17 @@
   .Delivery-header h1 {
     font-size: 40px;
     color: #27490bab;
-    padding-right: 200px;
+    
   }
   
   .Delivery-header p {
     font-size: 25px;
     color: #27490bab;
-    padding-right: 200px;
   }
   
   .Delivery-photos {
     width: 900px;
-  padding-left: 150px;
+    padding-left: 289px;
   }
   
   .Delivery-photos img {
