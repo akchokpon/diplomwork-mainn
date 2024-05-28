@@ -10,14 +10,14 @@
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid #27490bab;
   border-radius: 5px;
   cursor: pointer;
   transition: all 100ms linear;
 }
 .cartlink-button:hover {
-  background-color: rgb(0, 0, 0);
-  border: 1px solid rgb(0, 0, 0);
+  background-color: #000000ab;
+  border: 1px solid #27490bab;
 }
 .cartlink-button div {
   text-decoration: none;
