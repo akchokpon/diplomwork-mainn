@@ -1,59 +1,3 @@
-.CartList .cartItem {
-
-
-  width: 90%;
-  padding: 10px 0;
-  border-bottom: 1px solid gray;
-  font-size: 28px;
-  height: 100%;
-}
-.cartItem img {
-  max-width: 150px;
-
-  transition: all 100ms linear;
-}
-.cartItem input {
-  width: 30px;
-}
-.cartItem a {
-  color: black;
-  text-decoration: none;
-}
-.cartItem:hover img {
-  filter: opacity(80%);
-}
-.cartItem i {
-  cursor: pointer;
-}
-.cartItem .inputs {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media (max-width: 880px) {
-  .CartList .cartItem {
-    font-size: 23px;
-  }
-  .cartItem i {
-    font-size: 28px;
-  }
-}
-@media (max-width: 700px) {
-  .CartList .cartItem {
-    font-size: 18px;
-  }
-  .cartItem .inputs {
-    flex-direction: column-reverse;
-    font-size: 23px;
-  }
-  .inputs i {
-    font-size: 28px;
-  }
-  .CartList img {
-    width: 100px;
-  }
-}
 .CartList {
   display: flex;
   flex-direction: column;
@@ -81,10 +25,20 @@
   object-fit: cover;
 }
 
+.itemDetails a {
+  padding: 30px;
+  font-size: 20px;
+}
+
+.itemDetails > * {
+  font-size: 20px;
+}
+
 .inputs {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-top: 20px;
 }
 
 .inputs input {
@@ -93,7 +47,7 @@
   border: 1px solid #ced4da;
   border-radius: 3px;
   padding: 5px;
-  font-size: 25px;
+  font-size: 16px;
 }
 
 .quantityButton {
@@ -103,8 +57,9 @@
   padding: 6px 22px;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 29px;
+  font-size: 20px;
 }
+
 .quantityButton:hover {
   background-color: #27490bab;
 }
@@ -115,11 +70,20 @@
   text-align: center;
 }
 
-.fa-times {
+.removeButton {
+  background-color: #831c1c;
+  color: white;
+  border: none;
+  padding: 7px 10px;
   cursor: pointer;
-  color: 27490bab;
-  font-size: 20px;
+  border-radius: 5px;
+  font-size: 17px;
 }
-.removeButton{
 
+.removeButton:hover {
+  background-color: #cc0000;
+}
+h1{
+  padding-bottom: 20px;
+  text-align: center;
 }
