@@ -4,25 +4,28 @@
   justify-content: space-around;
 }
 .ProductList .product hr {
-  border: 1px solid rgb(220, 220, 220);
+  border: 1px solid rgb(99 141 83);
   width: 90%;
 }
 .ProductList .product {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(220, 220, 220);
+  border: 2px solid rgb(99 141 83);
   border-radius: 5px;
   margin: 15px 0px;
+  overflow: hidden;
+  position: relative;
   padding: 5px;
 }
 .ProductList .product img {
   width: 250px;
   height: 310px;
+  transition: 0.5s;
+  border-radius: 10px;
   background-color: white;
-  transition: all 100ms linear;
 }
 .ProductList .product:hover img {
-  filter: opacity(80%);
+  transform: scale(1.1);
 }
 .product a {
   color: black;
@@ -38,7 +41,7 @@
 }
 .ProductList .text {
   max-width: 200px;
-  height: 90px;
+
   margin: 0 10px;
 }
 .ProductList .actions {

@@ -1,13 +1,22 @@
 footer {
-  padding: 25px 0;
-  background-color: #cedbc4ab;
+  padding: 40px 0;
+
 }
 .Foot_tit {
-  padding-left: 34px;
+
   font-size: 25px;
   font-weight: 500;
-  padding-bottom: 15px;
+color: #27490bab;
+padding-left: 36px;
 }
+.Foot_tit_1 {
+
+  font-size: 25px;
+  font-weight: 500;
+color: #27490bab;
+padding-right: 36px;
+}
+
 .Foot_bot{
   text-align: center;
   font-size: 12px;

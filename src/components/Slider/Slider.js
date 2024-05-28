@@ -37,7 +37,6 @@ const SliderComponent = () => {
               <p className="desc-content">
                 Lorem ipsum dolor sit amet, pri autem nemore bonorum te. Autem fierent ullamcorper ius no, nec ea quodsi invenire.
               </p>
-              <a href="product-details.html" className="btn flosun-button secondary-btn theme-color rounded-0">Shop Now</a>
             </div>
           </div>
 
@@ -49,7 +48,6 @@ const SliderComponent = () => {
               <p className="desc-content">
                 Lorem ipsum dolor sit amet, pri autem nemore bonorum te. Autem fierent ullamcorper ius no, nec ea quodsi invenire.
               </p>
-              <a href="product-details.html" className="btn flosun-button secondary-btn rounded-0">Shop Now</a>
             </div>
           </div>
 
@@ -61,7 +59,6 @@ const SliderComponent = () => {
               <p className="desc-content">
                 Lorem ipsum dolor sit amet, pri autem nemore bonorum te. Autem fierent ullamcorper ius no, nec ea quodsi invenire.
               </p>
-              <a href="product-details.html" className="btn flosun-button secondary-btn rounded-0">Shop Now</a>
             </div>
           </div>
 

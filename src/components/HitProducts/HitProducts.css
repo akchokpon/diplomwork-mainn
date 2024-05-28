@@ -38,7 +38,7 @@
 }
 .HitProducts .text {
   max-width: 200px;
-  height: 90px;
+
 }
 .HitProducts .hit {
   position: absolute;
@@ -52,6 +52,7 @@
 .HitProducts .header {
   display: flex;
   color: #27490bab;
+  padding: 20px;
   align-items: flex-end;
 }
 .HitProducts .header span {
@@ -63,8 +64,7 @@
   transform: translateY(-8px);
 }
 .HitProducts i {
-  margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 40px;
 }
 .HitProducts .product {
   display: flex;

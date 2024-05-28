@@ -51,17 +51,19 @@ export default function CartList() {
         <Link to={"/products/" + product.slug}>
           <img src={product.picture} alt={product.name} />
         </Link>
-        <Link to={"/products/" + product.slug}>{product.name}</Link>
-        <span>${product.price}</span>
-        <div className="inputs">
-          <button className="quantityButton" onClick={() => decrementQuantity(product)}>-</button>
-          <input
-            type="number"
-            value={cart[product.id]}
-            min={1}
-            onChange={(event) => onQuantityChange(product, +event.target.value)} />
-          <button className="quantityButton" onClick={() => incrementQuantity(product)}>+</button>
-          <button className="removeButton" onClick={() => onItemRemove(product)}>+</button>
+        <div className="itemDetails">
+          <Link to={"/products/" + product.slug}>{product.name}</Link>
+          <span>${product.price}</span>
+          <div className="inputs">
+            <button className="quantityButton" onClick={() => decrementQuantity(product)}>-</button>
+            <input
+              type="number"
+              value={cart[product.id]}
+              min={1}
+              onChange={(event) => onQuantityChange(product, +event.target.value)} />
+            <button className="quantityButton" onClick={() => incrementQuantity(product)}>+</button>
+            <button className="removeButton" onClick={() => onItemRemove(product)}>Remove</button>
+          </div>
         </div>
       </div>
     ));

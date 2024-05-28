@@ -28,16 +28,16 @@ export default function HitProducts({ category }) {
         <span>${product.price}</span>
         <AddToCart product={product} />
       </div>
-    ))
+    ));
 
   return (
     <div className="HitProducts">
       <div className="header">
-        <i class="fa-solid fa-star" /> <span>Bestsellers</span> <hr color="#b1cc19" />
+        <span>Bestsellers</span> <hr color="#b1cc19" />
       </div>
       <div className="hits">
         {output}
       </div>
     </div>
-  )
+  );
 }

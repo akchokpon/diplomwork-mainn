@@ -39,7 +39,7 @@
   display: block;
 }
 .dropdownContent li {
-  background-color: #f7f7f7;
+  background-color: #b0bba8ab;
   list-style-type: none;
 }
 .CategoryList:hover .dropdownContent {
@@ -52,7 +52,7 @@
 .dropdownContent li a:hover {
   transform: translateX(5px);
   transition: 200ms ease all;
-  color: palevioletred;
+  color: rgb(21, 9, 13);
 }
 
 @media (max-width: 860px) {
