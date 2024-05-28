@@ -7,22 +7,25 @@ const Contact = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
   return (
-    <div className="contacts-container container">
+    <div className="container">
       <h2 className="contacts-heading">Get in Touch</h2>
       <div className="contact-details">
-        <p>
-          <strong className="contact-label">Address:</strong> Kyrgyzstan, Bishkek
-boulevard Erkindik 14
-        </p>
-        <p>
-          <strong className="contact-label">Phone:</strong> +996500365555
-        </p>
-        <p>
-          <strong className="contact-label">Email:</strong>info@hellobeauty.kg
-        </p>
-        <p>
-          <strong className="contact-label">Working Hours:</strong> Monday to Friday, 9:00 AM - 6:00 PM
-        </p>
+        
+          <div className="adres">
+        Adress: <a  className="contact-label" href="map">Bishkek Sity Srt Tumanova 21  </a>
+        </div>
+        
+   
+          <div className="phone">
+            Phone: <a  className="contact-label" href="tel:+996702514897">+996702514897</a>
+            </div>
+        
+        <div className="email">
+          Email: <a  className="contact-label" href="email:kimhyumgni@gmail">kimhyumgni@gmail</a>
+          </div>
+        <div className="hours">
+          Working Hours: <a  className="contact-label" href="#">Monday to Friday, 24/7</a>
+          </div>
       </div>
       <p className="contact-message">
 	  May you radiate beauty inside and out, and may MirAy be your trusted ally on this journey. Here's to embracing your unique charm and finding joy in every moment.
