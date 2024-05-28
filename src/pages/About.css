@@ -11,9 +11,11 @@
   }
   
   .About h1 {
+    font-size: 56px;
     text-align: center;
-    color: black;
-  }
+    color: #27490bab;
+    padding-top: 45px;
+}
   .confirmation {
     position: absolute;
     margin-top: -20px;
@@ -106,18 +108,20 @@
     opacity: 0;
     transform: translateY(-50px);
     animation: slideInDown 1s ease forwards;
+    padding-top: 20px;
   }
   
   .mission-text {
     opacity: 0;
     transform: translateY(50px);
     animation: slideInUp 1s ease forwards;
+    padding-bottom: 20px;
   }
   .link-instagram{
-    color: black;
+    color: rgb(212, 212, 212);
   }
   .nomer{
-    color: black;
+    color: rgb(212, 212, 212);
   }
   /* animation keyframes */
   @keyframes slideInDown {
