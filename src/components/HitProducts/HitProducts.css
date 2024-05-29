@@ -1,7 +1,7 @@
 .hits {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .HitProducts .product hr {
   border: 1px solid rgb(220, 220, 220);
@@ -52,11 +52,11 @@
 .HitProducts .header {
   display: flex;
   color: #27490bab;
-  padding: 20px;
+  padding: 20px 0;
   align-items: flex-end;
 }
 .HitProducts .header span {
-  margin: 0 5px;
+  margin: 0 5px 0 0;
   font-size: 40px;
 }
 .HitProducts hr {
@@ -97,4 +97,29 @@
   .HitProducts .header i {
     margin-left: 10px;
   }
+  .HitProducts .product {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    margin: 15px 0px;
+    padding: 5px;
+    /* width: 250px; */
+}
+}
+@media (max-width: 500px) {
+  .HitProducts .header i {
+    margin-left: 10px;
+  }
+  .HitProducts .product {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    margin: 15px 0px;
+    padding: 5px;
+    /* width: 250px; */
+}
 }

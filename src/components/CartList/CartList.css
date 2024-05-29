@@ -15,7 +15,7 @@
 }
 
 .Delivery-photos {
-  display: flex;
+
   align-items: center; /* Выравнивание изображения по вертикали */
 }
 
@@ -104,7 +104,32 @@ h1{
   padding-left: 35px;
 }
 .order1-photos img{
-  width: 790px;
+  width: 740px;
   height: 600px;
 
+}
+
+@media only screen and (max-width: 990px) {
+  .CartList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cartItemsContainer {
+    width: 100%;
+  }
+
+  .cartItem {
+    width: 100%;
+  }
+
+  .itemDetails {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .order1-photos img {
+    width: 100%;
+    height: auto;
+  }
 }

@@ -11,6 +11,7 @@
     width: 250px;
     height: 240px;
     border-radius: 20px;
+    padding-left: 35px;
   }
   .fast_img-big img{
     width: 370px;
@@ -47,7 +48,6 @@
   .fast_txt {
     color: #414536;
     font-size: 16px;
-    line-height: 24px;
     /* 150% */
     margin-bottom: 50px;
   }
@@ -82,4 +82,119 @@
   }
   .fast_left{
     display: flex;
+  }
+
+  
+@media  screen and (max-width: 1100px) {
+ 
+    .fast_img-big img {
+      width: 290px;
+      height: 500px;
+    }
+  
+    .fast_img-sm img {
+      width: 186px;
+      height: 199px;
+    }
+  
+    .sec_sub-tit {
+      font-size: 22px;
+    }
+    .fast_txt{
+        font-size: 13px;
+    }
+    .fast_img-sm img {
+        width: 228px;
+        height: 235px;
+        border-radius: 20px;
+    }
+    .fast_img-big img {
+        width: 326px;
+        height: 550px;
+        border-radius: 20px;
+    }   
+  }
+  @media  screen and (max-width: 900px){
+
+    .fast_img-big img {
+        width: 240px;
+        height: 450px;
+      }
+    
+      .fast_img-sm img {
+        width: 157px;
+        padding-left: 35px;
+       border-radius: 20px;
+        height: 193px;
+    }
+      .sec_sub-tit {
+        font-size: 22px;
+      }
+      .fast_txt{
+          font-size: 11px;
+      }
+
+  }
+  @media  screen and (max-width: 600px){
+    .fast_img-big img {
+        width: 196px;
+        height: 363px;
+    }
+    
+    .fast_img-sm img {
+        width: 95px;
+        padding-left: 39px;
+        border-radius: 20px;
+        height: 144px;
+    }
+      .sec_sub-tit {
+        font-size: 12px;
+        width: 170px;
+        padding-left: 27px;
+      }
+       .fast_txt {
+        font-size: 8px;
+        width: 190px;
+        padding-left: 27px;
+    }
+      .fast_in {
+       padding: 0 0 0 0 ;
+    }
+    .fast_right {
+        /* width: 50%; */
+        padding-left: 34px;
+        align-self: center;
+    }
+  }
+  
+  @media  screen and (max-width: 750px){
+    .fast_img-big img {
+        width: 196px;
+        height: 363px;
+    }
+    
+    .fast_img-sm img {
+        width: 95px;
+        padding-left: 39px;
+        border-radius: 20px;
+        height: 144px;
+    }
+      .sec_sub-tit {
+        font-size: 12px;
+        width: 170px;
+        padding-left: 27px;
+      }
+       .fast_txt {
+        font-size: 8px;
+        width: 190px;
+        padding-left: 27px;
+    }
+      .fast_in {
+       padding: 0 0 0 0 ;
+    }
+    .fast_right {
+        /* width: 50%; */
+        padding-left: 34px;
+        align-self: center;
+    }
   }

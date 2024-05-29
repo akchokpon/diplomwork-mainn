@@ -32,13 +32,11 @@ export default function HitProducts({ category }) {
 
   return (
     <div className="HitProducts">
-      <div className="container">
       <div className="header">
         <span>Bestsellers</span> <hr color="#b1cc19" />
       </div>
       <div className="hits">
         {output}
-      </div>
       </div>
     </div>
   );

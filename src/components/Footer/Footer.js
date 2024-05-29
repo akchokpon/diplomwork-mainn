@@ -22,9 +22,7 @@ function Footer() {
               </p>
             </div>
           </div>
-          <div className="Foot_links-wrap">
-            <p className="Foot_tit_1">Links</p>
-          </div>
+          
         </div>
         <div className="Foot_bot">
           <p>

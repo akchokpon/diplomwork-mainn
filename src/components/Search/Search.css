@@ -1,5 +1,5 @@
 .Search {
-    height: 37px;
+    height: 34px;
     background-color: #27490bab;
     width: 350px;
     border-radius: 10px;
@@ -17,7 +17,7 @@
     line-height: 30px;
     font-weight: bold;
     outline: none;
-    padding: 0;
+    padding: 0 0 0 12px;
   }
   .Search .NoResults {
     position: absolute;
@@ -38,8 +38,6 @@
   }
   @media screen and (max-width: 999px) {
     .Search {
-      margin: 20px 5px;
-      width: 130px;
     }
     .Search .searcher {
       margin: 6px 20px 0 0;
@@ -52,6 +50,18 @@
     }
     .Search .SearchResults {
       right: -25px;
+    }
+  }
+  @media screen and (max-width: 689px) {
+    .Search {
+      width: 100px;
+      margin: 15px 30px;
+    }
+    .Search .SearchResults {
+      right: 95px;
+    }
+    .Search .searcher {
+      margin: 6px 20px 0 0;
     }
   }
   

@@ -37,6 +37,18 @@
   .cartlink-button{
     width: 125px;
   }
+  .cartlink-button {
+    width: 100px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border: 1px solid #27490bab;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
 }
 @media (max-width:550px) {
   .cartlink-button span{
@@ -48,4 +60,16 @@
   .cartlink-button div {
     font-size: 30px;
   }
+  .cartlink-button {
+    width: 100px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border: 1px solid #27490bab;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
 }

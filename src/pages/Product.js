@@ -52,9 +52,9 @@ export default function Product() {
             </div>
         
         <div>
-          <button onClick={() => handleQuantityChange(quantity - 1)}>-</button>
+          {/* <button onClick={() => handleQuantityChange(quantity - 1)}>-</button>
           <span>{quantity}</span>
-          <button onClick={() => handleQuantityChange(quantity + 1)}>+</button>
+          <button onClick={() => handleQuantityChange(quantity + 1)}>+</button> */}
         </div>
         <AddToCart product={product} onClick={handleAddToCart} />
       </div>
