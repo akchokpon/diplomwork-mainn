@@ -108,6 +108,11 @@ h1{
   height: 600px;
 
 }
+.cartItemsContainer p{
+  color: rgb(26, 21, 21);
+  font-weight: 700;
+  font-size: 20px;
+}
 
 @media only screen and (max-width: 990px) {
   .CartList {
